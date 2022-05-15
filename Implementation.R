@@ -76,14 +76,14 @@ NmbZerosTriv <- function(ZerosCalcule){
 Triv <- NmbZerosTriv(3)
 
 
-# nomvre de zéros non triviaux que l'on prend 
+# nombre de zéros non triviaux que l'on prend 
 rescorr <- c()
 for(k in seq(2,201,0.5)){
   rescorr <- c(rescorr,correc(k,1)) # correc(k,10), correc(k,50), correc(k,200)
 }
 
 
-# traçage des figures en focntion du nombre de zéros non triviaux pris
+# traçage des figures en fonction du nombre de zéros non triviaux pris
 ggplot() + geom_step(aes(a,1:200))+ xlim(0,100) + ylim(0,25) + xlab("") + ylab("") +
   theme(axis.line = element_line(colour = "grey18"), panel.background = element_blank(),
         legend.position = c(0.1, 0.96),legend.text = element_text(size = 11),

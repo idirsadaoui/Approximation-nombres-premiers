@@ -6,7 +6,8 @@ Premier <- function(n) {
     if( n %% d == 0) return(FALSE)
     d <- d + 1
   }
-  return(TRUE) }
+  return(TRUE) 
+}
 
 # N premiers nombres premiers
 Npremier <- function(n){

@@ -5,7 +5,9 @@ Premier <- function(n) {
   }
   d <- 2 #
   while( d < n){
-    if( n %% d == 0) return(FALSE)
+    if( n %% d == 0){
+      return(FALSE)
+    }
     d <- d + 1
   }
   return(TRUE) 

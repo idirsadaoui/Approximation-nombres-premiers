@@ -1,8 +1,10 @@
 # renvoie si un nombre est premier ou non
 Premier <- function(n) { 
-  if(n < 2) return(FALSE) 
+  if(n < 2){
+    return(FALSE) 
+  }
   d <- 2 #
-  while( d < n) {
+  while( d < n){
     if( n %% d == 0) return(FALSE)
     d <- d + 1
   }
